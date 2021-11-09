@@ -37,10 +37,15 @@ function renderWeather(weatherObj) {
     weatherEl.appendChild(city)
 
     // current weather - "weather.description"
-    var currWeather = document.createElement('h3')
-    currWeather.textContent = weatherObj.weather.description
-    weatherEl.appendChild(currWeather)
-    console.log(currWeather)
+    weatherObj.weather.forEach(function(currWeather) {
+        var currWeather = document.createElement('h3')
+        currWeather.textContent = weatherObj.weather.description
+        weatherEl.appendChild(currWeather)
+    })
+
+
+
+
 
     // icon image "weather.icon"
     var icon = document.createElement('img')
