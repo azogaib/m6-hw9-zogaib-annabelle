@@ -33,16 +33,30 @@ function renderWeather(weatherObj) {
 
     // name of city "name", "sys.country"
     var city = document.createElement('h2')
-    city.textContent = weatherObj.name + "("  + weatherObj.sys.country + ")"
+    city.textContent = weatherObj.name + ", "  + weatherObj.sys.country
     weatherEl.appendChild(city)
 
     // current weather - "weather.description"
     var currWeather = document.createElement('h3')
-    currWeather.textContent = weatherObj.weather
+    currWeather.textContent = weatherObj.weather.description
     weatherEl.appendChild(currWeather)
     console.log(currWeather)
 
+    // icon image "weather.icon"
+    var icon = document.createElement('img')
+    icon.textContent = weatherObj.weather.icon
+    weatherEl.appendChild(icon)
+    console.log(icon)
 
+    // current temperature "main.temp"
+    var currTemp = document.createElement('h4')
+    currTemp.textContent = "Current: " + weatherObj.main.temp + "℉"
+    weatherEl.appendChild(currTemp)
+
+    // feels-like temperature "main.feels_like"
+    var feelsLikeTemp = document.createElement('h4')
+    feelsLikeTemp.textContent = "Feels Like: " + weatherObj.main.feels_like + "℉"
+    weatherEl.appendChild(feelsLikeTemp)
 }
 // handle clearing previous weather
 // handle weather not found
