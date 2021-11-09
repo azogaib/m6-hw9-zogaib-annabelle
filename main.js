@@ -58,11 +58,6 @@ function renderWeather(weatherObj) {
     feelsLikeTemp.textContent = "Feels Like: " + weatherObj.main.feels_like + "℉"
     weatherEl.appendChild(feelsLikeTemp)
 }
-// handle clearing previous weather
-// handle weather not found
-// render the following:
-    // Name of the Searched City with Country Code - "name", "sys.country"
+
     // Description of current weather - "weather.description"
     // Icon image for current weather conditions - "weather.icon"
-    // Current Temperature - "main.temp"
-    // Current "feels like" Temperature - "main.feels_like"
