@@ -43,13 +43,9 @@ function renderWeather(weatherObj) {
         weatherEl.appendChild(currWeather)
     })
 
-
-
-
-
     // icon image "weather.icon"
     var icon = document.createElement('img')
-    icon.textContent = weatherObj.weather.icon
+    icon.src = weatherObj.weather.icon
     weatherEl.appendChild(icon)
     console.log(icon)
 
