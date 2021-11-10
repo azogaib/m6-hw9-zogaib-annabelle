@@ -1,3 +1,3 @@
 # m6-hw9-zogaib-annabelle
 
-I could not figure out how to access the main.description and main.icon. I could at best get [object Object] to show in place of the information and did a for loop for one to see if it would work and it doe snot. I am sure I am using the right keywords (description and icon). I dont receive any errors but when I log the variable to the console it returns an empty h4 or empty img.
+I could not figure out how to access the main.icon. I am sure I am using the right keyword (icon). I dont receive any errors but when I log the variable to the console it returns an empty img.
